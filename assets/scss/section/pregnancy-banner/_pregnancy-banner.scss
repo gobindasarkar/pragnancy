@@ -1,0 +1,61 @@
+/*-------------------------
+18.pregnancy-banner
+--------------------------*/
+.pregnancy-banner {
+     .banner-wrap {
+          position: relative;
+          z-index: 1;
+          .banner-image {
+               img {
+                    border-radius: 0 0 0 10rem;
+               }
+          }
+          &:after {
+               position: absolute;
+               content: '';
+               width: 50%;
+               height: 100%;
+               background: url(../images/banner-content-bg.png) var(--seconday-color);
+               background-repeat: no-repeat;
+               background-position: right;
+               top: 0;
+               right: 0;
+               z-index: -1;
+          }
+          .banner-content {
+               padding: 6rem;
+               h2 {
+                    margin-bottom: 1.5rem;
+                    font-size: 4.8rem;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    color: var(--white);
+               }
+               h4 {
+                    margin-bottom: 3.5rem;
+                    font-family: $bodyFont;
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    color: #FF9B95;
+               }
+               p {
+                    margin-bottom: 2.5rem;
+                    font-size: 1.6rem;
+                    line-height: 2.8rem;
+                    color: var(--white);
+               }
+          }
+     }
+}
+
+@media (max-width:991px) {
+     .pregnancy-banner .banner-wrap::after {
+          width: 100%;
+          background: var(--seconday-color);
+     }
+}
+@media (max-width: 480px) {
+     .pregnancy-banner .banner-wrap .banner-content {
+          padding: 4rem 2rem;
+     }
+}

@@ -1,0 +1,72 @@
+/*-------------------------
+17.team-area
+--------------------------*/
+.team-area {
+     .single-team {
+          padding: 3rem;
+          background: #FAFAFA;
+          transition: $transition;
+          &:hover {
+               background: var(--white);
+               box-shadow: 0px 50px 80px rgba(203, 203, 203, 0.25);
+          }
+          .team-image {
+               margin-bottom: 3rem;
+               border: 1.5rem solid var(--white);
+               box-sizing: border-box;
+               img {
+                    width: 100%;
+                    height: auto;
+               }
+          }
+          .team-info {
+               .team-name {
+                    margin-bottom: 1.5rem;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    color: #252222;
+                    a {
+                         color: #252222;
+                         transition: $transition;
+                         &:hover {
+                              color: var(--primary-color);
+                         }
+                    }
+               }
+               .team-profession {
+                    margin-bottom: 1.5rem;
+                    font-family: $bodyFont;
+                    font-size: 1.6rem;
+                    text-transform: capitalize;
+                    color: #7E7E7E;
+               }
+               .team-social-media {
+                    margin: 0;
+                    padding: 0;
+                    li {
+                         display: inline-block;
+                         list-style: none;
+                         margin: 0 .5rem;
+                         a {
+                              font-size: 1.6rem;
+                              color: #A4A0A0;
+                              transition: $transition;
+                              &:hover {
+                                   color: var(--primary-color);
+                              }
+                         }
+                    }
+               }
+          }
+     }
+}
+
+@media (max-width: 991px) {
+     .team-area .single-team {
+          padding: 2rem;
+     }
+     .team-area .single-team .team-image {
+          border: 1rem solid var(--white);
+     }
+}

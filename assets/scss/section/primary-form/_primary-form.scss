@@ -1,0 +1,55 @@
+/*-------------------------
+20.primary-form
+--------------------------*/
+.primary-form {
+     padding: 5rem 4rem;
+     background: var(--white);
+     .form-title {
+          margin-bottom: 2.5rem;
+          font-size: 2.4rem;
+          font-weight: 400;
+          text-transform: capitalize;
+          color: #252222;
+     }
+     .form-group {
+          margin-bottom: 2rem;
+          .form-control {
+               width: 100%;
+               height: 6rem;
+               border-radius: 1rem;
+               border: 1px solid #EEEEEE;
+               padding: 1rem 2rem;
+               font-family: $bodyFont;
+               font-size: 1.6rem;
+               font-weight: 400;
+               color: #A4A0A0;
+          }
+          .form-message {
+               width: 100%;
+               height: 12rem;
+               border-radius: 1rem;
+               border: 1px solid #EEEEEE;
+               padding:  1rem 2rem;
+               font-family: $bodyFont;
+               font-size: 1.6rem;
+               font-weight: 400;
+               color: #A4A0A0;
+               resize: none;
+          }
+          .nice-select {
+               margin-bottom: 2rem;
+               width: 100%;
+               height: 6rem;
+               border-radius: 1rem;
+               border: 1px solid #EEEEEE;
+               padding: 1rem 2rem;
+               font-family: $bodyFont;
+               font-size: 1.6rem;
+               font-weight: 400;
+               color: #A4A0A0;
+          }
+     }
+     .primary-btn {
+          border: 0;
+     }
+}

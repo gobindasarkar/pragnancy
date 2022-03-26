@@ -1,0 +1,74 @@
+/*-------------------------
+10.counter-area
+--------------------------*/
+.counter-area {
+     
+     .signle-counter {
+          margin-bottom: 3rem;
+          .counter-icon {
+               @include flex-position(flex, center, center);
+               margin: auto;
+               margin-bottom: 3rem;
+               width: 8rem;
+               height: 8rem;
+               border-radius: 1rem;
+               text-align: center;
+               padding: 1rem;
+               background: var(--seconday-color);
+               box-shadow: 0px 9px 16px rgba(71, 110, 207, 0.28);
+          }
+          .counter-text {
+               margin-bottom: 1rem;
+               font-size: 3.6rem;
+               font-weight: 400;
+               color: #252222;
+          }
+          .counter-title {
+               font-family: $bodyFont;
+               font-size: 1.8rem;
+               color: #524F4F;
+               font-weight: 400;
+          }
+     }
+     .row {
+          .col-lg-3 {
+               &:nth-child(even) {
+                    .signle-counter {
+                         .counter-icon  {
+                              background: var(--primary-color);
+                              box-shadow: 0px 9px 16px rgba(255, 122, 113, 0.42);
+                         }
+                    }
+               }
+          }
+     }
+     &.counter-bg {
+          background: var(--seconday-color);
+          .signle-counter {
+               .counter-icon {
+                    background: var(--white);
+                    box-shadow: none;
+               }
+               .counter-text {
+                    color: var(--white);
+               }
+               .counter-title {
+                    color: var(--white);
+               }
+          }
+          .row {
+               .col-lg-3 {
+                    &:nth-child(even) {
+                         .signle-counter {
+                              .counter-icon  {
+                                   box-shadow: none;
+                              }
+                         }
+                    }
+               }
+          }
+     }
+     &.counte-bg-two {
+          background: #FAFAFA;
+     }
+}

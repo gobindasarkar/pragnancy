@@ -1,0 +1,54 @@
+/*-------------------------
+5.hero-banner-area
+--------------------------*/
+.hero-banner-area {
+     padding-top: 22rem;
+     padding-bottom: 18rem;
+     background-image: url('../images/hero-banner-bg.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     .hero-banenr-text {
+          .banner-title {
+               font-family: $titlefont;
+               font-size: 6rem;
+               line-height: 7.5rem;
+               font-weight: 400;
+               color: var(--white);
+          }
+          .banner-content {
+               margin-bottom: 3.5rem;
+               font-size: 1.6rem;
+               line-height: 2.8rem;
+               font-weight: 400;
+               color: var(--white);
+          }
+     }    
+}
+@media (max-width: 1199px) {
+     .hero-banner-area .hero-banenr-text .banner-title {
+          font-size: 5rem;
+          line-height: 6.5rem;
+     }
+}
+@media (max-width:991px) {
+     .hero-banner-area .hero-banenr-text .banner-title {
+          font-size: 4rem;
+          line-height: 5.5rem;
+     }
+     .hero-banner-area {
+          padding-top: 12rem;
+          padding-bottom: 8rem;
+     }
+}
+@media (max-width: 767px) {
+     .hero-banner-area .hero-banenr-image {
+          margin-bottom: 3rem;
+     }
+}
+@media (max-width: 375px) {
+     .hero-banner-area .hero-banenr-text .banner-title {
+          font-size: 3.2rem;
+          line-height: 3.7rem;
+     }
+}

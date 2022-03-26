@@ -1,0 +1,55 @@
+/*-------------------------
+6.section-title
+--------------------------*/
+.section-title {
+     margin-top: -5px;
+     &.mb-45 {
+          margin-bottom: 4.5rem;
+     }
+     &.title-white {
+          .title {
+               color: var(--white);
+          }
+          .sub-title {
+               color: var(--white);
+          }
+     }
+     .title {
+          margin-top: 0;
+          font-size: 3.6rem;
+          line-height: 1;
+          font-weight: 400;
+          text-transform: capitalize;
+          color: #252222;
+          margin-bottom: 1.5rem;
+     }
+     .sub-title {
+          width: 52%;
+          margin: auto;
+          font-size: 1.6rem;
+          line-height: 2.58rem;
+          color: var(--bColor);
+          margin-bottom: 0;
+     }
+}
+
+@media (max-width: 991px) {
+     .section-title .sub-title {
+          width: 75%;
+     }
+}
+@media (max-width: 767px) {
+     .section-title .sub-title {
+          width: 100%;
+     }
+}
+@media (max-width: 414px) {
+     .section-title .title {
+          font-size: 3.2rem;
+          line-height: 4rem;
+     }
+     .section-title .sub-title {
+          font-size: 1.4rem;
+          line-height: 2.4rem
+     }
+}

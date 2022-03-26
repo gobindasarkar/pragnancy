@@ -1,0 +1,144 @@
+/*-------------------------
+15.about-page
+--------------------------*/
+.about-page {
+     .single-about-wrap {
+          position: relative;
+          background: var(--white);
+          box-shadow: 0px 50px 100px rgba(208, 208, 208, 0.25);
+          border-radius: 10px 100px 10px 10px;
+          margin-bottom: 10rem;
+          .circle {
+               position: absolute;
+               right: -50px;
+               top: -50px;
+          }
+          &:last-child {
+               margin-bottom: 0;
+          }
+          .about-image {
+               img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 10px 10px 100px 10px;
+               }
+          }
+          .about-content {
+               padding: 3rem 7rem;
+               h2 {
+                    margin-bottom: 2rem;
+                    font-size: 2.4rem;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    color: #524F4F;
+               }
+               p {
+                    font-size: 1.6rem;
+                    line-height: 2.8rem;
+                    color: var(--bColor);
+               }
+               .feature-list {
+                    margin-bottom: 3rem;
+                    padding: 0;
+                    li {
+                         display: block;
+                         position: relative;
+                         list-style: none;
+                         padding-left: 2rem;
+                         font-size: 1.6rem;
+                         line-height: 1;
+                         color: var(--primary-color);
+                         margin-bottom: 1.5rem;
+                         &:last-child {
+                              margin-bottom: 0;
+                         }
+                         &:before {
+                              position: absolute;
+                              content: "\f00c";
+                              font-family: "Font Awesome 5 free";
+                              font-weight: 900;
+                              font-size: 1.2rem;
+                              left: 0;
+                              top: 2px;
+                              color: currentColor;
+                         }
+                    }
+               }
+          }
+          &.style-two {
+               border-radius: 10px 10px 10px 100px;
+               .about-image {
+                    img {
+                         width: 100%;
+                         height: auto;
+                         border-radius: 100px 10px 10px 10px;
+                    }
+               }
+               .counter-area {
+                    display: flex;
+                    flex-flow: row wrap;
+                    .single-counter {
+                         width: 50%;
+                         margin-top: 3rem;
+                         &.secronday-color {
+                              h2 {
+                                   color: var(--seconday-color);
+                              }
+                         }
+                         &.primary-color {
+                              h2 {
+                                   color: var(--primary-color);
+                              }
+                         }
+                         h2 {
+                              margin-bottom: .5rem;
+                              font-size: 3.6rem;
+                              font-weight: 400;
+                              line-height: 1;
+                              color: var(--primary-color);
+                         }
+                         p {
+                              font-size: 1.6rem;
+                              font-weight: 700;
+                              text-transform: capitalize;
+                              color: #524F4F;
+                              margin:0;
+                         }
+                    }
+               }
+          }
+     }
+     
+}
+
+
+@media (max-width: 1300px) {
+     .about-page .single-about-wrap .circle {
+          display: none;
+     }
+}
+@media (max-width: 991px) {
+     .about-page .single-about-wrap .about-content {
+          padding: 3rem 2rem;
+     }
+     .about-page .single-about-wrap.style-two .counter-area .single-counter {
+          margin-top: 1rem;
+     }
+     .about-page .single-about-wrap {
+          border-radius: 10px 30px 10px 10px;
+     }
+     .about-page .single-about-wrap.style-two {
+          border-radius: 10px 10px 10px 30px;
+     }
+     .about-page .single-about-wrap {
+          margin-bottom: 5rem;
+      }
+}
+@media (max-width: 414px) {
+     .about-page .single-about-wrap.style-two .counter-area .single-counter p {
+          font-size: 1.4rem;
+     }
+     .about-page .single-about-wrap.style-two .counter-area .single-counter h2 {
+          font-size: 3rem;
+     }
+}

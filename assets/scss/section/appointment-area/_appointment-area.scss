@@ -1,0 +1,29 @@
+/*-------------------------
+21.appointment-area
+--------------------------*/
+.appointment-area {
+     .appointment-form-area {
+          background: url('../images/appointment-bg.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          padding: 8rem;
+          .primary-form {
+               box-shadow: 0px 60px 100px rgba(185, 185, 185, 0.25);
+          }
+     }
+}
+
+@media (max-width: 991px) {
+     .appointment-area .appointment-form-area {
+          padding: 4rem 2rem;
+     }
+}
+@media (max-width: 480px) {
+     .appointment-area .appointment-form-area .primary-form {
+          padding: 3rem;
+     }
+     .appointment-area .appointment-form-area {
+          padding: 0;
+     }
+}

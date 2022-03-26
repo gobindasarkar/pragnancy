@@ -1,0 +1,72 @@
+/*
+------------- Table of content ----------------
+
+Template Name: Pragnancy Responsive  HTML5 Template
+Template URI: http://Pragnancy.com
+Description: Pragnancy Responsive  HTML5 Template
+Author: Gobinda Sarkar
+Author URI: http://Pragnancy.com
+Version: 1.0
+
+---------------------- common content ----------
+1.body reset content
+2.header area
+3.footer-area
+4.button-area
+5.hero-banner-area
+6.section-title
+7.story-area
+8.service-area
+9.service-area
+10.counter-area
+11.quafied-doctors
+12.testimonial-area
+13.subscribe-area
+14.breadcrumb-area
+15.about-page
+16.team-page-area 
+17.team-area
+18.pregnancy-banner
+19.contact-area
+20.primary-form
+21.appointment-area
+
+
+*/
+// variable
+@import "../scss/variable/_variable.scss";
+
+// mixin
+@import "../scss/mixin/_mixin.scss";
+
+// body reset content
+@import "../scss/reset/_predefine.scss";
+
+// component content
+@import "../scss/section/header/header";
+@import "../scss/section/footer/footer";
+@import "../scss/section/button/button";
+@import "../scss/section/hero-banner/hero-banner";
+@import "../scss/section/section-title/section-title";
+@import "../scss/section/story-area/story-area";
+@import "../scss/section/service-area/service-area";
+@import "../scss/section/service-area/service-area-v2";
+@import "../scss/section/counter-area/counter-area";
+@import "../scss/section/quafied-doctors/quafied-doctors";
+@import "../scss/section/testimonial-area/testimonial-area";
+@import "../scss/section/subscribe-area/subscribe-area";
+@import "../scss/section/breadcrumb-area/breadcrumb-area";
+@import "../scss/section/team-area/team-area";
+@import "../scss/section/pregnancy-banner/pregnancy-banner";
+@import "../scss/section/primary-form/primary-form";
+@import "../scss/section/appointment-area/appointment-area";
+
+
+// page content
+@import "../scss/pages/about-page/about-page";
+@import "../scss/pages/team-page/team-page";
+@import "../scss/pages/contact-area/contact-area";
+
+
+@import "../scss/section/animations.scss";
+

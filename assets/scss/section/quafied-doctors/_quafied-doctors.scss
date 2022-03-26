@@ -1,0 +1,187 @@
+/*-------------------------
+11.quafied-doctors
+--------------------------*/
+.quafied-doctors-area {
+     position: relative;
+     z-index: 1;
+     &:before {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 1450px;
+          background: url('../images/asset-bg.png');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          background-position: center;
+          left: 0;
+          bottom: 8rem;
+          z-index: -1;
+     }
+     &:after {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 75%;
+          left: 0;
+          bottom: 0;
+          background: #FAFAFA;
+          border-radius:20rem 0 0 0 ;
+          z-index: -2;
+     }
+     .nav-tabs {
+          border: 0;
+          justify-content: space-between;
+          .nav-item {
+               margin-bottom: 0;
+          }
+          .nav-link {
+               text-align: center;
+               font-family: $bodyFont;
+               font-size: 1.6rem;
+               font-weight: 500;
+               text-transform: capitalize;
+               color: #524F4F;
+               padding: 0;
+               border: 0;
+               margin-bottom: 0;
+               background: transparent;
+               .tab-icon {
+                    @include flex-position(flex, center, center);
+                    margin-bottom: 1rem;
+                    padding: 1rem;
+                    width: 13rem;
+                    height: 13rem;
+                    border-radius: 50%;
+                    background: #EEEEEE;
+                    border: 15px solid var(--white);
+                    box-sizing: border-box;
+                    transition: $transition;
+                    .icon {
+                         transition: $transition;
+                    }
+               }
+               &:hover {
+                    color: var(--primary-color);
+                    .tab-icon {
+                         background: var(--primary-color);
+                         .icon {
+                              filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(346deg) brightness(1000%) contrast(100%);
+                         }
+                    } 
+               }
+               &.active {
+                    color: var(--primary-color);
+                    .tab-icon {
+                         background: var(--primary-color);
+                         .icon {
+                              filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(346deg) brightness(1000%) contrast(100%);
+                         }
+                    } 
+               }
+          }
+     }
+     .tab-content {
+          margin-top: 5rem;
+          padding: 7rem 4rem;
+          background: var(--white);
+          border-radius: 2rem;
+          min-height: 650px;
+          .quafied-doctors-img {
+               filter: drop-shadow(0px 20px 60px rgba(187, 187, 187, 0.25));
+          }
+          .quafied-doctors-content {
+               h2 {
+                    margin-bottom: 2rem;
+                    font-size: 2.4rem;
+                    text-transform: capitalize;
+                    font-weight: 400;
+                    color: #524F4F;
+               }
+               p {
+                    margin-bottom: 1.5rem;
+                    font-size: 1.6rem;
+                    line-height: 2.8rem;
+                    color: #7E7E7E;
+               }
+               .quafied-feature-list {
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    .quafied-feature {
+                         display: flex;
+                         flex-flow: row wrap;
+                         li {
+                              position: relative;
+                              padding-left: 3rem;
+                              width: 50%;
+                              margin-bottom: 1rem;
+                              font-size: 1.6rem;
+                              line-height: 1;
+                              text-transform: capitalize;
+                              color: #524F4F;
+                              &:before {
+                                   position: absolute;
+                                   content: "\f00c";
+                                   font-family: "Font Awesome 5 free";
+                                   font-weight: 900;
+                                   left: 0;
+                                   top: 0;
+                                   color: var(--seconday-color );
+                              }
+                         }
+                    }
+               }
+          }
+     }
+}
+
+@media (max-width:1199px) {
+     .quafied-doctors-area::before { 
+          display: none;
+     }
+     .quafied-doctors-area::after {
+          height: 100%;
+     }
+}
+@media (max-width: 991px) {
+     .quafied-doctors-area .nav-tabs {
+          justify-content: flex-start;
+     }
+     .quafied-doctors-area .nav-tabs .nav-item {
+          margin-bottom: 2rem;
+          width: 20%;
+     }
+     .quafied-doctors-area .tab-content .quafied-doctors-content .quafied-feature-list .quafied-feature li {
+          width: 100%;
+          line-height: 1.5;
+     }
+     .quafied-doctors-area .tab-content {
+          margin-top: 3rem;
+          padding: 3rem ;
+     }
+     .quafied-doctors-area .nav-tabs .nav-link .tab-icon {
+          margin: auto;
+          margin-bottom: 1rem;
+     }
+}
+@media (max-width: 767px) {
+     .quafied-doctors-area .quafied-doctors-img {
+          margin-bottom: 3rem;
+          text-align: center;
+     }
+     .quafied-doctors-area .nav-tabs .nav-item {
+          width: 25%;
+     }
+}
+@media (max-width: 480px) {
+     .quafied-doctors-area .nav-tabs .nav-item {
+          width: 33%;
+     }
+     .quafied-doctors-area .nav-tabs {
+          justify-content: space-between;
+     }
+}
+@media (max-width: 375px) {
+     .quafied-doctors-area .nav-tabs .nav-item {
+          width: 50%;
+     }
+}
